@@ -11,12 +11,11 @@ public class Main {
 
         {
             int temperature = 10;
-            if (temperature < -5) {
+            if (temperature < 5) {
                 System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-            } else {
-                if (temperature > 5) {
-                    System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
-                }
+            }
+            if (temperature >= 5) {
+                System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
             }
         }
 
@@ -44,23 +43,23 @@ public class Main {
                 System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу.");
             }
         }
+
         {
             int age = 21;
             if (age > 5 && age < 14) {
                 System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении");
-            } else {
-                if (age < 5) {
-                    System.out.println("Если возраст ребенка равен " + age + ", то нельзя кататься на аттракционе");
-                }
-
-                if (age > 14) {
-                    System.out.println("Если возраст ребенка равен " + age + ", то он может кататься без сопровождения взрослого");
-                }
+            }
+            if (age < 5) {
+                System.out.println("Если возраст ребенка равен " + age + ", то нельзя кататься на аттракционе");
+            }
+            if (age > 14) {
+                System.out.println("Если возраст ребенка равен " + age + ", то он может кататься без сопровождения взрослого");
             }
         }
+
         {
             int people = 100;
-            int capacity = 120;
+            int capacity = 102;
             int seating = 60;
             int standing = capacity - seating;
             int availableSeats = capacity - people;
@@ -75,18 +74,19 @@ public class Main {
                 System.out.println(availableSeats + " стоячих мест");
             }
         }
+
         {
             int one = 3;
             int two = 19;
             int three = 1;
             if (one > two && one > three) {
-                System.out.println("one " + one);
+                System.out.println("самое большое число one " + one);
             }
             if (two > one && two > three) {
-                System.out.println("two " + two);
+                System.out.println("самое большое число two " + two);
             }
             if (three > one && three > two) {
-                System.out.println("three " + three);
+                System.out.println("самое большое число three " + three);
             }
         }
     }
